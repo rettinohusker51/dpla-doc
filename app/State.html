@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class State - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/state.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-find_by_name">::find_by_name</a>
+    
+    <li><a href="#method-c-geocode">::geocode</a>
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-c-state_in_list-3F">::state_in_list?</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./DPLA.html">DPLA</a>
+  
+    <li><a href="./DPLA/Conditions.html">DPLA::Conditions</a>
+  
+    <li><a href="./DPLA/Facets.html">DPLA::Facets</a>
+  
+    <li><a href="./DPLA/Items.html">DPLA::Items</a>
+  
+    <li><a href="./DPLA/Result.html">DPLA::Result</a>
+  
+    <li><a href="./App.html">App</a>
+  
+    <li><a href="./AppIconUploader.html">AppIconUploader</a>
+  
+    <li><a href="./AppScreenshotUploader.html">AppScreenshotUploader</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AppsController.html">AppsController</a>
+  
+    <li><a href="./BreadcrumbsBuilder.html">BreadcrumbsBuilder</a>
+  
+    <li><a href="./ConfirmationsController.html">ConfirmationsController</a>
+  
+    <li><a href="./Exhibition.html">Exhibition</a>
+  
+    <li><a href="./Item.html">Item</a>
+  
+    <li><a href="./ItemsController.html">ItemsController</a>
+  
+    <li><a href="./ItemsHelper.html">ItemsHelper</a>
+  
+    <li><a href="./Map.html">Map</a>
+  
+    <li><a href="./MapController.html">MapController</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PagesController.html">PagesController</a>
+  
+    <li><a href="./PartnersController.html">PartnersController</a>
+  
+    <li><a href="./PasswordsController.html">PasswordsController</a>
+  
+    <li><a href="./PermittedParams.html">PermittedParams</a>
+  
+    <li><a href="./RefineHelper.html">RefineHelper</a>
+  
+    <li><a href="./RegistrationsController.html">RegistrationsController</a>
+  
+    <li><a href="./ResultManipulationHelper.html">ResultManipulationHelper</a>
+  
+    <li><a href="./SavedItem.html">SavedItem</a>
+  
+    <li><a href="./SavedItemPosition.html">SavedItemPosition</a>
+  
+    <li><a href="./SavedList.html">SavedList</a>
+  
+    <li><a href="./SavedListsController.html">SavedListsController</a>
+  
+    <li><a href="./SavedListsHelper.html">SavedListsHelper</a>
+  
+    <li><a href="./SavedSearch.html">SavedSearch</a>
+  
+    <li><a href="./SavedSearchesController.html">SavedSearchesController</a>
+  
+    <li><a href="./Search.html">Search</a>
+  
+    <li><a href="./SearchController.html">SearchController</a>
+  
+    <li><a href="./SearchHelper.html">SearchHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./State.html">State</a>
+  
+    <li><a href="./SubjectsController.html">SubjectsController</a>
+  
+    <li><a href="./SubjectsHelper.html">SubjectsHelper</a>
+  
+    <li><a href="./Timeline.html">Timeline</a>
+  
+    <li><a href="./TimelineController.html">TimelineController</a>
+  
+    <li><a href="./TimelineHelper.html">TimelineHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class State</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="LIST">LIST
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-abbr" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">abbr</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-lat" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">lat</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-lng" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">lng</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-name" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">name</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-find_by_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">find_by_name</span><span
+            class="method-args">(name)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="find_by_name-source">
+            <pre><span class="ruby-comment"># File app/models/state.rb, line 72</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">find_by_name</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-identifier">state</span> = <span class="ruby-constant">LIST</span>.<span class="ruby-identifier">select</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">=~</span> <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">name</span>, <span class="ruby-keyword">true</span>) }.<span class="ruby-identifier">to_a</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">state</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">new</span> <span class="ruby-identifier">state</span>.<span class="ruby-identifier">last</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- find_by_name-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- find_by_name-method -->
+
+    
+      <div id="method-c-geocode" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">geocode</span><span
+            class="method-args">(name)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="geocode-source">
+            <pre><span class="ruby-comment"># File app/models/state.rb, line 66</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">geocode</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">state</span> = <span class="ruby-identifier">find_by_name</span>(<span class="ruby-identifier">name</span>)
+    [<span class="ruby-identifier">state</span>.<span class="ruby-identifier">lat</span>, <span class="ruby-identifier">state</span>.<span class="ruby-identifier">lng</span>]
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- geocode-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- geocode-method -->
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(state)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/models/state.rb, line 62</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">state</span>)
+  <span class="ruby-ivar">@abbr</span>, <span class="ruby-ivar">@name</span>, <span class="ruby-ivar">@lat</span>, <span class="ruby-ivar">@lng</span> = <span class="ruby-identifier">state</span>[<span class="ruby-value">:abbr</span>], <span class="ruby-identifier">state</span>[<span class="ruby-value">:name</span>], <span class="ruby-identifier">state</span>[<span class="ruby-value">:lat</span>], <span class="ruby-identifier">state</span>[<span class="ruby-value">:lng</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-c-state_in_list-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">state_in_list?</span><span
+            class="method-args">(state)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="state_in_list-3F-source">
+            <pre><span class="ruby-comment"># File app/models/state.rb, line 79</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">state_in_list?</span>(<span class="ruby-identifier">state</span>)
+  <span class="ruby-constant">LIST</span>.<span class="ruby-identifier">has_key?</span> <span class="ruby-identifier">state</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- state_in_list-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- state_in_list-3F-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

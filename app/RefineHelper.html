@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>module RefineHelper - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/helpers/refine_helper.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-after_refine">#after_refine</a>
+    
+    <li><a href="#method-i-before_refine">#before_refine</a>
+    
+    <li><a href="#method-i-country_facets">#country_facets</a>
+    
+    <li><a href="#method-i-country_refines">#country_refines</a>
+    
+    <li><a href="#method-i-language_facets">#language_facets</a>
+    
+    <li><a href="#method-i-language_refines">#language_refines</a>
+    
+    <li><a href="#method-i-partner_facets">#partner_facets</a>
+    
+    <li><a href="#method-i-partner_refines">#partner_refines</a>
+    
+    <li><a href="#method-i-place_facets">#place_facets</a>
+    
+    <li><a href="#method-i-place_refines">#place_refines</a>
+    
+    <li><a href="#method-i-provider_facets">#provider_facets</a>
+    
+    <li><a href="#method-i-provider_refines">#provider_refines</a>
+    
+    <li><a href="#method-i-refine_path">#refine_path</a>
+    
+    <li><a href="#method-i-refines_present-3F">#refines_present?</a>
+    
+    <li><a href="#method-i-state_facets">#state_facets</a>
+    
+    <li><a href="#method-i-state_refines">#state_refines</a>
+    
+    <li><a href="#method-i-subject_facets">#subject_facets</a>
+    
+    <li><a href="#method-i-subject_refines">#subject_refines</a>
+    
+    <li><a href="#method-i-type_facets">#type_facets</a>
+    
+    <li><a href="#method-i-type_refines">#type_refines</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./DPLA.html">DPLA</a>
+  
+    <li><a href="./DPLA/Conditions.html">DPLA::Conditions</a>
+  
+    <li><a href="./DPLA/Facets.html">DPLA::Facets</a>
+  
+    <li><a href="./DPLA/Items.html">DPLA::Items</a>
+  
+    <li><a href="./DPLA/Result.html">DPLA::Result</a>
+  
+    <li><a href="./App.html">App</a>
+  
+    <li><a href="./AppIconUploader.html">AppIconUploader</a>
+  
+    <li><a href="./AppScreenshotUploader.html">AppScreenshotUploader</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AppsController.html">AppsController</a>
+  
+    <li><a href="./BreadcrumbsBuilder.html">BreadcrumbsBuilder</a>
+  
+    <li><a href="./ConfirmationsController.html">ConfirmationsController</a>
+  
+    <li><a href="./Exhibition.html">Exhibition</a>
+  
+    <li><a href="./Item.html">Item</a>
+  
+    <li><a href="./ItemsController.html">ItemsController</a>
+  
+    <li><a href="./ItemsHelper.html">ItemsHelper</a>
+  
+    <li><a href="./Map.html">Map</a>
+  
+    <li><a href="./MapController.html">MapController</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PagesController.html">PagesController</a>
+  
+    <li><a href="./PartnersController.html">PartnersController</a>
+  
+    <li><a href="./PasswordsController.html">PasswordsController</a>
+  
+    <li><a href="./PermittedParams.html">PermittedParams</a>
+  
+    <li><a href="./RefineHelper.html">RefineHelper</a>
+  
+    <li><a href="./RegistrationsController.html">RegistrationsController</a>
+  
+    <li><a href="./ResultManipulationHelper.html">ResultManipulationHelper</a>
+  
+    <li><a href="./SavedItem.html">SavedItem</a>
+  
+    <li><a href="./SavedItemPosition.html">SavedItemPosition</a>
+  
+    <li><a href="./SavedList.html">SavedList</a>
+  
+    <li><a href="./SavedListsController.html">SavedListsController</a>
+  
+    <li><a href="./SavedListsHelper.html">SavedListsHelper</a>
+  
+    <li><a href="./SavedSearch.html">SavedSearch</a>
+  
+    <li><a href="./SavedSearchesController.html">SavedSearchesController</a>
+  
+    <li><a href="./Search.html">Search</a>
+  
+    <li><a href="./SearchController.html">SearchController</a>
+  
+    <li><a href="./SearchHelper.html">SearchHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./State.html">State</a>
+  
+    <li><a href="./SubjectsController.html">SubjectsController</a>
+  
+    <li><a href="./SubjectsHelper.html">SubjectsHelper</a>
+  
+    <li><a href="./Timeline.html">Timeline</a>
+  
+    <li><a href="./TimelineController.html">TimelineController</a>
+  
+    <li><a href="./TimelineHelper.html">TimelineHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module RefineHelper</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-after_refine" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">after_refine</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="after_refine-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 56</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">after_refine</span>
+  <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">filters</span>(<span class="ruby-value">:after</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- after_refine-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- after_refine-method -->
+
+    
+      <div id="method-i-before_refine" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">before_refine</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="before_refine-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 60</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">before_refine</span>
+  <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">filters</span>(<span class="ruby-value">:before</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- before_refine-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- before_refine-method -->
+
+    
+      <div id="method-i-country_facets" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">country_facets</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="country_facets-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">country_facets</span>
+  <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">countries</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">countries</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">country_refines</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span> }.<span class="ruby-identifier">to_a</span> <span class="ruby-operator">:</span> []
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- country_facets-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- country_facets-method -->
+
+    
+      <div id="method-i-country_refines" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">country_refines</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="country_refines-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">country_refines</span>
+  <span class="ruby-constant">Array</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">filters</span> <span class="ruby-value">:country</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- country_refines-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- country_refines-method -->
+
+    
+      <div id="method-i-language_facets" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">language_facets</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="language_facets-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 48</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">language_facets</span>
+  <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">languages</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">languages</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">language_refines</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span> }.<span class="ruby-identifier">to_a</span> <span class="ruby-operator">:</span> []
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- language_facets-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- language_facets-method -->
+
+    
+      <div id="method-i-language_refines" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">language_refines</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="language_refines-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 52</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">language_refines</span>
+  <span class="ruby-constant">Array</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">filters</span> <span class="ruby-value">:language</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- language_refines-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- language_refines-method -->
+
+    
+      <div id="method-i-partner_facets" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">partner_facets</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="partner_facets-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 40</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">partner_facets</span>
+  <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">partners</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">partners</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">partner_refines</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span> }.<span class="ruby-identifier">to_a</span> <span class="ruby-operator">:</span> []
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- partner_facets-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- partner_facets-method -->
+
+    
+      <div id="method-i-partner_refines" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">partner_refines</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="partner_refines-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">partner_refines</span>
+  <span class="ruby-constant">Array</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">filters</span> <span class="ruby-value">:partner</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- partner_refines-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- partner_refines-method -->
+
+    
+      <div id="method-i-place_facets" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">place_facets</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="place_facets-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 80</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">place_facets</span>
+  <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">places</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">places</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">place_refines</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span> }.<span class="ruby-identifier">to_a</span> <span class="ruby-operator">:</span> []
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- place_facets-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- place_facets-method -->
+
+    
+      <div id="method-i-place_refines" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">place_refines</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="place_refines-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 84</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">place_refines</span>
+  <span class="ruby-constant">Array</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">filters</span> <span class="ruby-value">:place</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- place_refines-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- place_refines-method -->
+
+    
+      <div id="method-i-provider_facets" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">provider_facets</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="provider_facets-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">provider_facets</span>
+  <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">providers</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">providers</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">provider_refines</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span> }.<span class="ruby-identifier">to_a</span> <span class="ruby-operator">:</span> []
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- provider_facets-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- provider_facets-method -->
+
+    
+      <div id="method-i-provider_refines" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">provider_refines</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="provider_refines-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">provider_refines</span>
+  <span class="ruby-constant">Array</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">filters</span> <span class="ruby-value">:provider</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- provider_refines-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- provider_refines-method -->
+
+    
+      <div id="method-i-refine_path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">refine_path</span><span
+            class="method-args">(area, value, options = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="refine_path-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">refine_path</span>(<span class="ruby-identifier">area</span>, <span class="ruby-identifier">value</span>, <span class="ruby-identifier">options</span> = {})
+  <span class="ruby-identifier">existing_refine</span> = <span class="ruby-identifier">params</span>[<span class="ruby-identifier">area</span>] <span class="ruby-operator">||</span> []
+  <span class="ruby-identifier">existing_refine</span> = <span class="ruby-constant">Array</span>(<span class="ruby-identifier">existing_refine</span>)
+  <span class="ruby-identifier">refine_params</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:remove</span>).<span class="ruby-identifier">present?</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">existing_refine</span> <span class="ruby-operator">-</span> [<span class="ruby-identifier">value</span>] <span class="ruby-operator">:</span> <span class="ruby-identifier">existing_refine</span> <span class="ruby-operator">+</span> [<span class="ruby-identifier">value</span>]
+  <span class="ruby-identifier">params</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">options</span>).<span class="ruby-identifier">deep_merge</span>(<span class="ruby-identifier">area</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">refine_params</span>.<span class="ruby-identifier">uniq</span>, <span class="ruby-identifier">page</span><span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- refine_path-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- refine_path-method -->
+
+    
+      <div id="method-i-refines_present-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">refines_present?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="refines_present-3F-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 9</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">refines_present?</span>
+  <span class="ruby-identifier">subject_refines</span>.<span class="ruby-identifier">present?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">type_refines</span>.<span class="ruby-identifier">present?</span> <span class="ruby-keyword">or</span>
+    <span class="ruby-identifier">provider_refines</span>.<span class="ruby-identifier">present?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">partner_refines</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">language_refines</span>.<span class="ruby-identifier">present?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">after_refine</span>.<span class="ruby-identifier">present?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">before_refine</span>.<span class="ruby-identifier">present?</span> <span class="ruby-keyword">or</span>
+    <span class="ruby-identifier">country_refines</span>.<span class="ruby-identifier">present?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">state_refines</span>.<span class="ruby-identifier">present?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">place_refines</span>.<span class="ruby-identifier">present?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- refines_present-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- refines_present-3F-method -->
+
+    
+      <div id="method-i-state_facets" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">state_facets</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="state_facets-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 72</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">state_facets</span>
+  <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">states</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">states</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">state_refines</span>.<span class="ruby-identifier">include?</span> (<span class="ruby-identifier">v</span>) <span class="ruby-keyword">or</span> (<span class="ruby-operator">!</span><span class="ruby-constant">State</span>.<span class="ruby-identifier">state_in_list?</span> (<span class="ruby-identifier">v</span>)) }.<span class="ruby-identifier">to_a</span> <span class="ruby-operator">:</span> []
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- state_facets-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- state_facets-method -->
+
+    
+      <div id="method-i-state_refines" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">state_refines</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="state_refines-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">state_refines</span>
+  <span class="ruby-constant">Array</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">filters</span> <span class="ruby-value">:state</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- state_refines-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- state_refines-method -->
+
+    
+      <div id="method-i-subject_facets" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">subject_facets</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="subject_facets-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">subject_facets</span>
+  <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">subjects</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">subjects</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">subject_refines</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span> }.<span class="ruby-identifier">to_a</span> <span class="ruby-operator">:</span> []
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- subject_facets-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- subject_facets-method -->
+
+    
+      <div id="method-i-subject_refines" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">subject_refines</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="subject_refines-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">subject_refines</span>
+  <span class="ruby-constant">Array</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">filters</span> <span class="ruby-value">:subject</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- subject_refines-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- subject_refines-method -->
+
+    
+      <div id="method-i-type_facets" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">type_facets</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="type_facets-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">type_facets</span>
+  <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">types</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">types</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">type_refines</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span> }.<span class="ruby-identifier">to_a</span> <span class="ruby-operator">:</span> []
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- type_facets-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- type_facets-method -->
+
+    
+      <div id="method-i-type_refines" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">type_refines</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="type_refines-source">
+            <pre><span class="ruby-comment"># File app/helpers/refine_helper.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">type_refines</span>
+  <span class="ruby-constant">Array</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">filters</span> <span class="ruby-value">:type</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- type_refines-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- type_refines-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

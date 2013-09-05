@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class Timeline - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/timeline.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="Search.html">Search</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-api_item_path">#api_item_path</a>
+    
+    <li><a href="#method-i-api_search_path">#api_search_path</a>
+    
+    <li><a href="#method-i-conditions">#conditions</a>
+    
+    <li><a href="#method-i-fields">#fields</a>
+    
+    <li><a href="#method-i-final_year">#final_year</a>
+    
+    <li><a href="#method-i-years">#years</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./DPLA.html">DPLA</a>
+  
+    <li><a href="./DPLA/Conditions.html">DPLA::Conditions</a>
+  
+    <li><a href="./DPLA/Facets.html">DPLA::Facets</a>
+  
+    <li><a href="./DPLA/Items.html">DPLA::Items</a>
+  
+    <li><a href="./DPLA/Result.html">DPLA::Result</a>
+  
+    <li><a href="./App.html">App</a>
+  
+    <li><a href="./AppIconUploader.html">AppIconUploader</a>
+  
+    <li><a href="./AppScreenshotUploader.html">AppScreenshotUploader</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AppsController.html">AppsController</a>
+  
+    <li><a href="./BreadcrumbsBuilder.html">BreadcrumbsBuilder</a>
+  
+    <li><a href="./ConfirmationsController.html">ConfirmationsController</a>
+  
+    <li><a href="./Exhibition.html">Exhibition</a>
+  
+    <li><a href="./Item.html">Item</a>
+  
+    <li><a href="./ItemsController.html">ItemsController</a>
+  
+    <li><a href="./ItemsHelper.html">ItemsHelper</a>
+  
+    <li><a href="./Map.html">Map</a>
+  
+    <li><a href="./MapController.html">MapController</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PagesController.html">PagesController</a>
+  
+    <li><a href="./PartnersController.html">PartnersController</a>
+  
+    <li><a href="./PasswordsController.html">PasswordsController</a>
+  
+    <li><a href="./PermittedParams.html">PermittedParams</a>
+  
+    <li><a href="./RefineHelper.html">RefineHelper</a>
+  
+    <li><a href="./RegistrationsController.html">RegistrationsController</a>
+  
+    <li><a href="./ResultManipulationHelper.html">ResultManipulationHelper</a>
+  
+    <li><a href="./SavedItem.html">SavedItem</a>
+  
+    <li><a href="./SavedItemPosition.html">SavedItemPosition</a>
+  
+    <li><a href="./SavedList.html">SavedList</a>
+  
+    <li><a href="./SavedListsController.html">SavedListsController</a>
+  
+    <li><a href="./SavedListsHelper.html">SavedListsHelper</a>
+  
+    <li><a href="./SavedSearch.html">SavedSearch</a>
+  
+    <li><a href="./SavedSearchesController.html">SavedSearchesController</a>
+  
+    <li><a href="./Search.html">Search</a>
+  
+    <li><a href="./SearchController.html">SearchController</a>
+  
+    <li><a href="./SearchHelper.html">SearchHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./State.html">State</a>
+  
+    <li><a href="./SubjectsController.html">SubjectsController</a>
+  
+    <li><a href="./SubjectsHelper.html">SubjectsHelper</a>
+  
+    <li><a href="./Timeline.html">Timeline</a>
+  
+    <li><a href="./TimelineController.html">TimelineController</a>
+  
+    <li><a href="./TimelineHelper.html">TimelineHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Timeline</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="YEARS">YEARS
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-api_item_path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">api_item_path</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="api_item_path-source">
+            <pre><span class="ruby-comment"># File app/models/timeline.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">api_item_path</span>
+  <span class="ruby-node">&quot;#{api_base_path}/items?id=%&amp;fields=#{fields.join(&#39;,&#39;)}&amp;#{api_key}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- api_item_path-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- api_item_path-method -->
+
+    
+      <div id="method-i-api_search_path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">api_search_path</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="api_search_path-source">
+            <pre><span class="ruby-comment"># File app/models/timeline.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">api_search_path</span>
+  <span class="ruby-identifier">conditions</span> = <span class="ruby-constant">DPLA</span><span class="ruby-operator">::</span><span class="ruby-constant">Conditions</span>.<span class="ruby-identifier">new</span>({ <span class="ruby-identifier">q</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@term</span> }.<span class="ruby-identifier">merge</span>(<span class="ruby-ivar">@filters</span>).<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">fields</span><span class="ruby-operator">:</span> <span class="ruby-identifier">fields</span>))
+  <span class="ruby-node">&quot;#{api_base_path}/items?#{conditions}#{api_key}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- api_search_path-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- api_search_path-method -->
+
+    
+      <div id="method-i-conditions" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">conditions</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="conditions-source">
+            <pre><span class="ruby-comment"># File app/models/timeline.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">conditions</span>
+  <span class="ruby-identifier">facets</span> = <span class="ruby-node">%w(date)</span>
+  <span class="ruby-identifier">conditions</span> = { <span class="ruby-identifier">q</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@term</span>, <span class="ruby-identifier">facets</span><span class="ruby-operator">:</span> <span class="ruby-identifier">facets</span> }.<span class="ruby-identifier">merge</span>(<span class="ruby-ivar">@filters</span>).<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">page_size</span><span class="ruby-operator">:</span> <span class="ruby-value">0</span>, <span class="ruby-identifier">facet_size</span><span class="ruby-operator">:</span> <span class="ruby-value">2000</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- conditions-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- conditions-method -->
+
+    
+      <div id="method-i-fields" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fields</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fields-source">
+            <pre><span class="ruby-comment"># File app/models/timeline.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fields</span>
+  <span class="ruby-node">%w(
+    id sourceResource.title isShownAt object
+    sourceResource.type sourceResource.creator
+    sourceResource.description
+  )</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fields-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fields-method -->
+
+    
+      <div id="method-i-final_year" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">final_year</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="final_year-source">
+            <pre><span class="ruby-comment"># File app/models/timeline.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">final_year</span>
+  <span class="ruby-identifier">year</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">years</span>.<span class="ruby-identifier">max_by</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">k</span>}.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">to_i</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-keyword">unless</span> <span class="ruby-constant">YEARS</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">year</span>
+  <span class="ruby-identifier">year</span>
+<span class="ruby-keyword">rescue</span>
+  <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">year</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- final_year-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- final_year-method -->
+
+    
+      <div id="method-i-years" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">years</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="years-source">
+            <pre><span class="ruby-comment"># File app/models/timeline.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">years</span>
+  <span class="ruby-identifier">result</span>.<span class="ruby-identifier">facets</span>.<span class="ruby-identifier">year</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- years-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- years-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class Search - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/search.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-api_base_path">#api_base_path</a>
+    
+    <li><a href="#method-i-api_key">#api_key</a>
+    
+    <li><a href="#method-i-api_search_path">#api_search_path</a>
+    
+    <li><a href="#method-i-app_search_path">#app_search_path</a>
+    
+    <li><a href="#method-i-conditions">#conditions</a>
+    
+    <li><a href="#method-i-count">#count</a>
+    
+    <li><a href="#method-i-countries">#countries</a>
+    
+    <li><a href="#method-i-items">#items</a>
+    
+    <li><a href="#method-i-languages">#languages</a>
+    
+    <li><a href="#method-i-partners">#partners</a>
+    
+    <li><a href="#method-i-places">#places</a>
+    
+    <li><a href="#method-i-providers">#providers</a>
+    
+    <li><a href="#method-i-result">#result</a>
+    
+    <li><a href="#method-i-states">#states</a>
+    
+    <li><a href="#method-i-subjects">#subjects</a>
+    
+    <li><a href="#method-i-types">#types</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./DPLA.html">DPLA</a>
+  
+    <li><a href="./DPLA/Conditions.html">DPLA::Conditions</a>
+  
+    <li><a href="./DPLA/Facets.html">DPLA::Facets</a>
+  
+    <li><a href="./DPLA/Items.html">DPLA::Items</a>
+  
+    <li><a href="./DPLA/Result.html">DPLA::Result</a>
+  
+    <li><a href="./App.html">App</a>
+  
+    <li><a href="./AppIconUploader.html">AppIconUploader</a>
+  
+    <li><a href="./AppScreenshotUploader.html">AppScreenshotUploader</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AppsController.html">AppsController</a>
+  
+    <li><a href="./BreadcrumbsBuilder.html">BreadcrumbsBuilder</a>
+  
+    <li><a href="./ConfirmationsController.html">ConfirmationsController</a>
+  
+    <li><a href="./Exhibition.html">Exhibition</a>
+  
+    <li><a href="./Item.html">Item</a>
+  
+    <li><a href="./ItemsController.html">ItemsController</a>
+  
+    <li><a href="./ItemsHelper.html">ItemsHelper</a>
+  
+    <li><a href="./Map.html">Map</a>
+  
+    <li><a href="./MapController.html">MapController</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PagesController.html">PagesController</a>
+  
+    <li><a href="./PartnersController.html">PartnersController</a>
+  
+    <li><a href="./PasswordsController.html">PasswordsController</a>
+  
+    <li><a href="./PermittedParams.html">PermittedParams</a>
+  
+    <li><a href="./RefineHelper.html">RefineHelper</a>
+  
+    <li><a href="./RegistrationsController.html">RegistrationsController</a>
+  
+    <li><a href="./ResultManipulationHelper.html">ResultManipulationHelper</a>
+  
+    <li><a href="./SavedItem.html">SavedItem</a>
+  
+    <li><a href="./SavedItemPosition.html">SavedItemPosition</a>
+  
+    <li><a href="./SavedList.html">SavedList</a>
+  
+    <li><a href="./SavedListsController.html">SavedListsController</a>
+  
+    <li><a href="./SavedListsHelper.html">SavedListsHelper</a>
+  
+    <li><a href="./SavedSearch.html">SavedSearch</a>
+  
+    <li><a href="./SavedSearchesController.html">SavedSearchesController</a>
+  
+    <li><a href="./Search.html">Search</a>
+  
+    <li><a href="./SearchController.html">SearchController</a>
+  
+    <li><a href="./SearchHelper.html">SearchHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./State.html">State</a>
+  
+    <li><a href="./SubjectsController.html">SubjectsController</a>
+  
+    <li><a href="./SubjectsHelper.html">SubjectsHelper</a>
+  
+    <li><a href="./Timeline.html">Timeline</a>
+  
+    <li><a href="./TimelineController.html">TimelineController</a>
+  
+    <li><a href="./TimelineHelper.html">TimelineHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Search</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-args" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">args</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-filters" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">filters</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-term" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">term</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(term, filters = {}, args = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <ul><li>
+<p>term is search query</p>
+</li><li>
+<p>filters is hash with refines</p>
+
+<pre>{subject: &#39;Ships&#39;, type: [&#39;image&#39;, &#39;text&#39;]}</pre>
+</li></ul>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">term</span>, <span class="ruby-identifier">filters</span> = {}, <span class="ruby-identifier">args</span> = {})
+  <span class="ruby-ivar">@term</span>, <span class="ruby-ivar">@filters</span>, <span class="ruby-ivar">@args</span> = <span class="ruby-identifier">term</span>, <span class="ruby-identifier">filters</span>, {}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-api_base_path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">api_base_path</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="api_base_path-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">api_base_path</span>
+  <span class="ruby-identifier">api_path</span> = <span class="ruby-constant">Settings</span>.<span class="ruby-identifier">api</span>.<span class="ruby-identifier">url</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">Settings</span>.<span class="ruby-identifier">api</span>.<span class="ruby-identifier">username</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">Settings</span>.<span class="ruby-identifier">api</span>.<span class="ruby-identifier">password</span>
+    <span class="ruby-identifier">api_path</span> = <span class="ruby-identifier">api_path</span>.<span class="ruby-identifier">gsub</span> <span class="ruby-string">&#39;://&#39;</span>, <span class="ruby-node">&quot;://#{Settings.api.username}:#{Settings.api.password }@&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">api_path</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- api_base_path-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- api_base_path-method -->
+
+    
+      <div id="method-i-api_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">api_key</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="api_key-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 77</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">api_key</span>
+  <span class="ruby-node">&quot;&amp;api_key=#{Settings.api.key}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">Settings</span>.<span class="ruby-identifier">api</span>.<span class="ruby-identifier">key</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- api_key-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- api_key-method -->
+
+    
+      <div id="method-i-api_search_path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">api_search_path</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="api_search_path-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 81</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">api_search_path</span>
+  <span class="ruby-identifier">fields</span> = <span class="ruby-node">%w(
+    id sourceResource.title isShownAt object
+    sourceResource.type sourceResource.creator
+    sourceResource.spatial.name sourceResource.spatial.coordinates
+  )</span>
+  <span class="ruby-identifier">conditions</span> = <span class="ruby-constant">DPLA</span><span class="ruby-operator">::</span><span class="ruby-constant">Conditions</span>.<span class="ruby-identifier">new</span>({ <span class="ruby-identifier">q</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@term</span> }.<span class="ruby-identifier">merge</span>(<span class="ruby-ivar">@filters</span>).<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">fields</span><span class="ruby-operator">:</span> <span class="ruby-identifier">fields</span>))
+  <span class="ruby-node">&quot;#{api_base_path}/items?#{conditions}#{api_key}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- api_search_path-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- api_search_path-method -->
+
+    
+      <div id="method-i-app_search_path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">app_search_path</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="app_search_path-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 91</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">app_search_path</span>
+  <span class="ruby-constant">Hash</span>[<span class="ruby-ivar">@filters</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> [<span class="ruby-identifier">k</span>, <span class="ruby-constant">Array</span>(<span class="ruby-identifier">v</span>)] }].<span class="ruby-identifier">to_query</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- app_search_path-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- app_search_path-method -->
+
+    
+      <div id="method-i-conditions" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">conditions</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="conditions-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 95</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">conditions</span>
+  <span class="ruby-identifier">facets</span> = <span class="ruby-node">%w(subject language type provider partner country state place)</span>
+  { <span class="ruby-identifier">q</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@term</span>, <span class="ruby-identifier">facets</span><span class="ruby-operator">:</span> <span class="ruby-identifier">facets</span>, <span class="ruby-identifier">facet_size</span><span class="ruby-operator">:</span> <span class="ruby-value">100</span> }.<span class="ruby-identifier">merge</span>(<span class="ruby-ivar">@filters</span>).<span class="ruby-identifier">merge</span>(<span class="ruby-ivar">@args</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- conditions-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- conditions-method -->
+
+    
+      <div id="method-i-count" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">count</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="count-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 65</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">count</span>
+  <span class="ruby-identifier">results</span>.<span class="ruby-identifier">count</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- count-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- count-method -->
+
+    
+      <div id="method-i-countries" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">countries</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="countries-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 53</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">countries</span>
+  <span class="ruby-identifier">results</span>.<span class="ruby-identifier">facets</span>.<span class="ruby-identifier">country</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- countries-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- countries-method -->
+
+    
+      <div id="method-i-items" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">items</span><span
+            class="method-args">(args = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns search results</p>
+          
+
+          
+          <div class="method-source-code" id="items-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">items</span>(<span class="ruby-identifier">args</span> = {})
+  <span class="ruby-ivar">@args</span> = <span class="ruby-identifier">args</span>
+  <span class="ruby-identifier">results</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- items-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- items-method -->
+
+    
+      <div id="method-i-languages" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">languages</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="languages-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">languages</span>
+  <span class="ruby-identifier">results</span>.<span class="ruby-identifier">facets</span>.<span class="ruby-identifier">language</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- languages-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- languages-method -->
+
+    
+      <div id="method-i-partners" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">partners</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="partners-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">partners</span>
+  <span class="ruby-identifier">results</span>.<span class="ruby-identifier">facets</span>.<span class="ruby-identifier">partner</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- partners-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- partners-method -->
+
+    
+      <div id="method-i-places" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">places</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="places-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 61</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">places</span>
+  <span class="ruby-identifier">results</span>.<span class="ruby-identifier">facets</span>.<span class="ruby-identifier">place</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- places-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- places-method -->
+
+    
+      <div id="method-i-providers" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">providers</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="providers-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 45</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">providers</span>
+  <span class="ruby-identifier">results</span>.<span class="ruby-identifier">facets</span>.<span class="ruby-identifier">provider</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- providers-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- providers-method -->
+
+    
+      <div id="method-i-result" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">result</span><span
+            class="method-args">(args = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="result-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">result</span>(<span class="ruby-identifier">args</span> = {})
+  <span class="ruby-identifier">items</span>(<span class="ruby-identifier">args</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- result-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- result-method -->
+
+    
+      <div id="method-i-states" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">states</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="states-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 57</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">states</span>
+  <span class="ruby-identifier">results</span>.<span class="ruby-identifier">facets</span>.<span class="ruby-identifier">state</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- states-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- states-method -->
+
+    
+      <div id="method-i-subjects" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">subjects</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="subjects-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">subjects</span>
+  <span class="ruby-identifier">results</span>.<span class="ruby-identifier">facets</span>.<span class="ruby-identifier">subject</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- subjects-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- subjects-method -->
+
+    
+      <div id="method-i-types" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">types</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="types-source">
+            <pre><span class="ruby-comment"># File app/models/search.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">types</span>
+  <span class="ruby-identifier">results</span>.<span class="ruby-identifier">facets</span>.<span class="ruby-identifier">type</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- types-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- types-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
