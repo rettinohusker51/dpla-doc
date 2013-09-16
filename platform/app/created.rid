@@ -1,0 +1,9 @@
+Thu, 12 Sep 2013 10:47:53 +0200
+doc/README_FOR_APP	Thu, 12 Sep 2013 10:47:41 +0200
+app/controllers/application_controller.rb	Mon, 15 Jul 2013 07:28:03 +0200
+app/controllers/home_controller.rb	Mon, 15 Jul 2013 07:28:03 +0200
+app/helpers/application_helper.rb	Mon, 15 Jul 2013 07:28:03 +0200
+app/helpers/home_helper.rb	Mon, 15 Jul 2013 07:28:03 +0200
+app/models/user.rb	Mon, 15 Jul 2013 07:28:03 +0200
+lib/dpla.rb	Mon, 15 Jul 2013 07:28:03 +0200
+lib/dpla/version.rb	Mon, 15 Jul 2013 07:28:03 +0200
